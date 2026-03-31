@@ -24,3 +24,16 @@ Le projet repose sur trois piliers technologiques :
         Exploitation du dataset Football Data from Transfermarkt (par David Cariboo).
 
         Fichiers utilisés : players.csv (infos joueurs), clubs.csv (noms des clubs) et appearances.csv (historique des matchs pour lier joueurs et clubs).
+
+## 🚀 Fonctionnalités
+- **Recherche croisée** : Trouvez des joueurs ayant évolué dans deux clubs différents ou ayant une nationalité spécifique.
+- **Autocomplétion** : Suggestions en temps réel pour les noms de clubs et de pays.
+- **Base de données complète** : Utilise le dataset de David Cariboo (Kaggle) pour des résultats précis.
+
+## 🛠️ Installation
+
+### 1. Prérequis
+- Python 3.x installé.
+- Les bibliothèques Python nécessaires :
+  ```bash
+  pip install flask flask-cors pandas
