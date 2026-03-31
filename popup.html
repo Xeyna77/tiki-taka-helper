@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { width: 300px; font-family: sans-serif; padding: 15px; background: #121212; color: white; }
+        .section { background: #1e1e1e; padding: 10px; border-radius: 8px; margin-bottom: 10px; border: 1px solid #333; }
+        label { font-size: 11px; color: #888; text-transform: uppercase; }
+        select, input { width: 100%; padding: 8px; margin-top: 5px; background: #2a2a2a; color: white; border: 1px solid #444; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+        button:hover { background: #45a049; }
+        #resultat-box { margin-top: 15px; max-height: 250px; overflow-y: auto; }
+    </style>
+</head>
+<body>
+    <div style="text-align:center; color:#4CAF50; font-weight:bold; margin-bottom:15px; font-size:18px;">TIKI-TAKA HELPER</div>
+
+    <div class="section">
+        <label>Critère 1</label>
+        <select id="type1">
+            <option value="club">Club</option>
+            <option value="pays">Pays</option>
+        </select>
+        <input type="text" id="valeur1" list="liste-suggestions1" placeholder="Ex: Real Madrid, France...">
+        <datalist id="liste-suggestions1"></datalist>
+    </div>
+
+    <div class="section">
+        <label>Critère 2</label>
+        <select id="type2">
+            <option value="club">Club</option>
+            <option value="pays">Pays</option>
+        </select>
+        <input type="text" id="valeur2" list="liste-suggestions2" placeholder="Ex: Paris, Brazil...">
+        <datalist id="liste-suggestions2"></datalist>
+    </div>
+
+    <button id="btnChercher">TROUVER LES JOUEURS</button>
+    <div id="resultat-box"></div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

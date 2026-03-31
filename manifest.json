@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Foot Finder - Joueurs Communs",
+  "version": "1.0",
+  "description": "Trouve les joueurs passés par deux clubs spécifiques.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"]
+}
